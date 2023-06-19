@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    background: url(./fylo-data-storage-component-master/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+main #optionsFylo{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 340px;
+}
+
+main #optionsFylo .title{
+    width: 100px;
+    height: 70px;
+}
+
+main #optionsFylo .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+main #optionsFylo .menu .image{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    padding: 0.6rem 0.6rem;
+    cursor: pointer;
+}
+
+main #optionsFylo .menu .image img{
+    display: block;
+    max-width: 100%;
+}
+
+main #occupiedData{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1rem;
+    height: 150px;
+    width: 450px;
+    padding: 1.5rem 2rem;
+}
+
+main #occupiedData .infoText{
+    display: flex;
+    justify-content: flex-start;
+}
+
+main #occupiedData .infoText p{
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main #occupiedData .infoText p span{
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+main #occupiedData .uploadBar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+
+main #occupiedData .uploadBar .progressBar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 0.5rem;
+    width: 75%;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+
+main #occupiedData .uploadBar .progressBar .dot{
+    background-color: white;
+    border-radius: 100%;
+    height: 0.6rem;
+    width: 0.6rem;
+}
+
+main #occupiedData .zeroToOneHundred{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+@media only screen and (max-width:900px){
+    body{
+        background: url(./fylo-data-storage-component-master/images/bg-mobile.png);
+        background-size: cover;
+        background-color: hsl(229, 57%, 11%);
+        background-repeat: no-repeat;
+    }
+    main{
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    main #optionsFylo{
+        width: 450px;
+    }
+
+}
+
